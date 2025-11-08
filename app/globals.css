@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #171717;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Fonts */
+  --font-nd: var(--font-normalidad);
+  --font-chakra: var(--font-chakra_petch);
+  --color-cyan: rgba(228, 250, 251, 1);
+
+  /* Colors */
+  --color-lime: #a3e635;
+  --color-dark-lime: #99ff00;
+  --color-gray: rgba(69, 79, 92, 1);
+  --color-dark-gray: #7a8390;
+  --color-slate: #454f5c;
+  --color-custom-white: #e4fafb;
+
+  --text-52: 52px;
+
+  /* Spacing  */
+  --spacing-164: 164px;
+  --spacing-7: 7px;
+
+  /* Radius */
+  --radius-20: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-normalidad);
+}
+
+.corner-clip-bl {
+  clip-path: polygon(100% 0, 100% 100%, 6% 100%, 0 87%, 0 0);
+}
+.corner-clip-tr {
+  clip-path: polygon(0 0, 97% 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.card-corner-clip-tr {
+  clip-path: polygon(0 0, 93% 0, 100% 7%, 100% 100%, 0 99%);
+}
+.card-corner-clip-tr-2 {
+  clip-path: polygon(0 0, 96% 0, 100% 7%, 100% 100%, 0 99%);
+}
+
+.clip-path-pill {
+  clip-path: polygon(
+    5% 0,
+    94% 0,
+    100% 22%,
+    100% 86%,
+    97% 100%,
+    6% 100%,
+    0% 80%,
+    0 12%
+  );
+}
+
+/* Inset for inner content (2px border offset) */
+.clip-path-pill-inset {
+  clip-path: polygon(
+    5% 0,
+    94% 0,
+    100% 22%,
+    100% 86%,
+    97% 100%,
+    6% 100%,
+    0% 80%,
+    0 12%
+  );
+}
