@@ -58,7 +58,7 @@ export default function CaseStudiesSection() {
                   height={300}
                   width={490}
                   alt={item.title}
-                  className="absolute inset-0 w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="Z-20 absolute inset-0 bg-linear-to-b from-[#133B5B] to-[#051929] opacity-40" />
                 <div className="absolute bottom-16 left-8 z-30 flex items-center">

@@ -23,10 +23,13 @@ export default function Home() {
               Dive into more stories to see how we turn ideas into powerful
               digital products.
             </div>
-            <p className="text-dark-lime font-chakra mt-4 flex items-center gap-2 text-xs font-bold">
+            <a
+              href="#"
+              className="text-dark-lime font-chakra mt-4 flex items-center gap-2 text-xs font-bold hover:underline"
+            >
               <span>SEE ALL STUDIES</span>
               <ArrowUpIcon className="[&>path]:stroke-dark-lime" />
-            </p>
+            </a>
           </div>
         </div>
       </div>
