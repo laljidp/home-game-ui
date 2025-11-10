@@ -1,4 +1,31 @@
+@import url("https://use.typekit.net/nfp5mfa.css");
 @import "tailwindcss";
+
+/* Load Typekit */
+
+/* Optional: define font-family for Tailwind */
+@layer base {
+  :root {
+    --font-typekit:
+      "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+.font-normalidad-compact {
+  font-family: "normalidad-compact", sans-serif;
+}
+.font-normalidad-text {
+  font-family: "normalidad-text", sans-serif;
+}
+.font-normalidad-wide {
+  font-family: "normalidad-wide", sans-serif;
+}
+.font-normalidad-extended {
+  font-family: "normalidad-extended", sans-serif;
+}
+.font-normalidad-ultraextended {
+  font-family: "normalidad-ultraextended", sans-serif;
+}
 
 :root {
   --background: #171717;

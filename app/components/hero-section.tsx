@@ -8,7 +8,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-black px-164 py-16 md:py-24">
       <div className="mx-auto text-center md:text-left">
         {/* Headline */}
-        <h1 className="font-nd lg:text-52 text-custom-white text-4xl font-extrabold -tracking-[4px] uppercase">
+        <h1 className="font-normalidad-extended lg:text-52 text-custom-white text-4xl font-extrabold -tracking-[4px] uppercase">
           Digital Product Development
           <br />
           Company Fuelled by Gaming DNA

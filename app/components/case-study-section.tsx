@@ -39,7 +39,9 @@ export default function CaseStudiesSection() {
       {portfolioItems.map((item, index) => (
         <React.Fragment key={index}>
           <div className="mx-auto space-y-8">
-            <h2 className="text-2xl font-normal md:text-3xl">{item.title}</h2>
+            <h2 className="font-normalidad-wide text-2xl font-normal md:text-3xl">
+              {item.title}
+            </h2>
             <div
               className={cn(
                 "flex items-stretch gap-8",
@@ -49,7 +51,7 @@ export default function CaseStudiesSection() {
               {/* Image */}
               <div
                 className={cn(
-                  "relative h-[490px] w-2/3 overflow-hidden border-gray-800 bg-gray-900 mix-blend-exclusion",
+                  "relative w-2/3 overflow-hidden border-gray-800 bg-gray-900 mix-blend-exclusion",
                   item.sectionReverse ? "card-corner-clip-tr-2" : "",
                 )}
               >
@@ -77,7 +79,7 @@ export default function CaseStudiesSection() {
                   <span className="ml-8 text-[22px] font-normal text-white">
                     Read full case study
                   </span>
-                  <button className="bg-lime right-0 bottom-0 px-5 py-3 text-sm text-gray-300 hover:text-white">
+                  <button className="bg-lime right-0 bottom-0 h-[55px] px-6 py-3 text-sm text-gray-300 hover:text-white">
                     <ArrowUpRight />
                   </button>
                 </div>
@@ -98,7 +100,7 @@ export default function CaseStudiesSection() {
                   className="flex h-9 w-fit items-start bg-transparent"
                 />
                 <div className="flex h-full flex-col justify-between">
-                  <p className="font-chakra text-custom-white mb-6 text-sm leading-6 font-medium tracking-wide italic">
+                  <p className="font-chakra text-custom-white mb-6 text-xl leading-[160%] font-semibold tracking-[-2%] italic">
                     {item.testimonial.text}
                   </p>
                   <div className="flex items-center gap-4">
@@ -110,8 +112,10 @@ export default function CaseStudiesSection() {
                       className="h-12 w-12 rounded-full bg-gray-700"
                     />
                     <div>
-                      <p className="font-semibold">{item.testimonial.name}</p>
-                      <p className="text-base font-medium tracking-wide text-[#9AA8BB]">
+                      <p className="font-normalidad-wide text-xl font-medium">
+                        {item.testimonial.name}
+                      </p>
+                      <p className="font-normalidad-wide text-base font-medium tracking-wide text-[#9AA8BB]">
                         {item.testimonial.role}
                       </p>
                     </div>

@@ -14,7 +14,7 @@ export function Header() {
           <div className="space-y-3">
             <LogoIcon className="h-[18px] w-auto" />
 
-            <p className="font-chakra text-gray max-w-60 text-xs leading-4.5 font-bold tracking-widest uppercase">
+            <p className="font-chakra text-gray max-w-164 text-xs leading-4.5 font-bold tracking-widest uppercase">
               {`// WE BUILD NEXT-GEN DIGITAL PRODUCTS EST 2017`}
             </p>
           </div>
@@ -26,7 +26,7 @@ export function Header() {
             <a
               key={item}
               href="#"
-              className="text-slate text-base font-medium tracking-wider uppercase transition-colors hover:text-white"
+              className="text-slate font-chakra text-base font-bold tracking-wider uppercase transition-colors hover:text-white"
             >
               {item}
             </a>
